@@ -1,0 +1,25 @@
+{
+  "author": "Andrew Chalkley <andrew@chalkley.org> (http://forefront.io)",
+  "name": "wifimanager",
+  "version": "0.0.1",
+  "description": "A wireless network manager for Node.js",
+  "scripts": {
+    "test": "mocha test",
+    "test:coverage": "./node_modules/.bin/istanbul cover _mocha"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5",
+    "istanbul": "^0.3.14"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/chalkers/wifimanager/raw/master/LICENCE"
+    }
+  ],
+  "main": "lib/index"
+}
