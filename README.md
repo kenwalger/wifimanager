@@ -7,11 +7,25 @@
 A simple Node.js WiFi Manager for Linux. Works great on embedded devices like the Raspberry Pi.
 
 
+##Usage
+
+```
+var vm = require('./wifimanager');
+
+vm.createAdHocNetwork('networkName', 'networkPassword');
+```
+
+Creates a wifi network named: `networkName`  
+Network password: `networkPassword`. Note password must be a minimum of *8* characters.
+
+```
+vm.stopAdHocNetwork()
+```
+
+Stops the network.
+
 ## To dos
 
-* startAdHocNetwork()
-    * need to fix when fs.writeFile() occurs
-* stopAdHocNetwork() - completed
 * connect()
 * isConnected()
 * isAdHocNetwork()
