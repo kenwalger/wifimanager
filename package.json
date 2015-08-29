@@ -1,12 +1,25 @@
 {
-  "author": "Andrew Chalkley <andrew@chalkley.org> (http://forefront.io)",
+  "author": "Ken W. Alger <kenalger@comcast.net>",
   "name": "wifimanager",
   "version": "0.0.1",
+  "bin" : "./lib/index.js",
+  "main": "lib/index",
   "description": "A wireless network manager for Node.js",
   "scripts": {
     "test": "mocha test",
     "test:coverage": "./node_modules/.bin/istanbul cover _mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenwalger/wifimanager.git"
+  },
+  "keywords": [
+    "Node",
+    "Raspberry Pi",
+    "Linux",
+    "WiFi Network",
+    "ADHOC network"
+  ],
   "engines": {
     "node": ">=0.10"
   },
@@ -18,8 +31,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/chalkers/wifimanager/raw/master/LICENCE"
+      "url": "https://github.com/kenwalger/wifimanager/raw/master/LICENCE"
     }
-  ],
-  "main": "lib/index"
+  ]
 }
