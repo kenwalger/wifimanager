@@ -9,6 +9,7 @@ A simple Node.js WiFi Manager for Linux. Works great on embedded devices like th
 
 ##Usage
 
+####Generate a Network
 ```
 var vm = require('./wifimanager');
 
@@ -16,8 +17,10 @@ vm.createAdHocNetwork('networkName', 'networkPassword');
 ```
 
 Creates a wifi network named: `networkName`  
-Network password: `networkPassword`. Note password must be a minimum of *8* characters.
+Network password: `networkPassword`. Note password must be a *minimum* of **8** characters.
 
+
+####Stop a Network
 ```
 vm.stopAdHocNetwork()
 ```
