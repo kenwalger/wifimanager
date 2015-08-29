@@ -6,22 +6,7 @@
 
 A simple Node.js WiFi Manager for Linux. Works great on embedded devices like the Raspberry Pi.
 
-## Installation
-
-```
-npm install wifimanager
-```
-
-## Basic Usage
-
-...
-
-```javascript
-var wifimanager = ...
-
-```
 
 ## To dos
 
 * Create adhoc network
-* Connect to existing networks
