@@ -25,7 +25,6 @@ Network password: `networkPassword`. Note password must be a *minimum* of **8** 
 vm.stopAdHocNetwork()
 ```
 
-Stops the network.
 
 ## To dos
 
