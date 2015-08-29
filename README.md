@@ -22,12 +22,17 @@ Network password: `networkPassword`. Note password must be a *minimum* of **8** 
 
 ####Stop a Network
 ```
-vm.stopAdHocNetwork()
+vm.stopAdHocNetwork();
+```
+
+
+####Check for Internet connectivity
+```
+vm.isConnected();
 ```
 
 
 ## To dos
 
 * connect()
-* isConnected()
 * isAdHocNetwork()
