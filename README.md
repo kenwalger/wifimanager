@@ -36,8 +36,3 @@ vm.isConnected();
 
 * connect()
 * disconnect()
-* isAdHocNetwork() - resolve method to determine value of current network SSID
-
-## Issues
-
-* Need to determine why there is a delay between the config file generation and the ability to use it.
