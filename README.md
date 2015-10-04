@@ -35,6 +35,7 @@ vm.isConnected();
 ## To dos
 
 * connect()
+* disconnect()
 * isAdHocNetwork() - resolve method to determine value of current network SSID
 
 ## Issues
