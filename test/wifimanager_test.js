@@ -21,7 +21,7 @@ describe("WifiManager", function (){
     describe("isConnected() method", function () {
        it("should confirm the wlan0 interface is active", function(done) {
            wifimanager.isConnected(), function (response) {
-               assert.equal('UP');
+               assert.equal('up');
                done();
            };
        });

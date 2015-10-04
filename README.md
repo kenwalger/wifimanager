@@ -28,7 +28,7 @@ vm.stopAdHocNetwork();
 
 ####Check for Internet connectivity
 ```
-vm.isConnected();
+vm.isInternetConnected();
 ```
 
 
@@ -36,3 +36,10 @@ vm.isConnected();
 
 * connect()
 * disconnect()
+
+##Working on:
+
+####Check for network connectivity
+```
+vm.isConnected();
+```
