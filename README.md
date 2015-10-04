@@ -17,7 +17,7 @@ vm.createAdHocNetwork('networkName', 'networkPassword');
 ```
 
 Creates a wifi network named: `networkName`  
-Network password: `networkPassword`. Note password must be a *minimum* of **8** characters.
+Network password: `networkPassword`. Password must be a *minimum* of **8** characters.
 
 
 ####Stop a Network
