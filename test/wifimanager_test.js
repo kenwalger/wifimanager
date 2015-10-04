@@ -18,9 +18,18 @@ describe("WifiManager", function (){
         });
     });
 
-    describe("isConnected() method", function() {
-        it("should confirm a network connection exists", function(done) {
-            wifimanager.isConnected(), function (response) {
+    describe("isConnected() method", function () {
+       it("should confirm the wlan0 interface is active", function(done) {
+           wifimanager.isConnected(), function (response) {
+               assert.equal('UP');
+               done();
+           };
+       });
+    });
+
+    describe("isInternetConnected() method", function() {
+        it("should confirm an internet connection exists", function(done) {
+            wifimanager.isInternetConnected(), function (response) {
                 assert.isTrue(true);
                 done();
             };
