@@ -6,7 +6,8 @@ var ip = require("../lib/ip");
 
 describe("WifiManager", function (){
     it("should be an instance of a WifiManager", function(){
-       assert.isTrue(wifimanager instanceof WifiManager);
+        assert.isTrue(wifimanager instanceof WifiManager);
+        done();
     });
 
     describe("createAdHocNetwork() method", function(){
@@ -39,19 +40,22 @@ describe("WifiManager", function (){
     describe("loopback() method", function() {
         describe('undefined', function() {
             it("should respond with 127.0.0.1", function() {
-                assert.equal(ip.loopback(), '127.0.0.1')
+                assert.equal(ip.loopback(), '127.0.0.1');
+                done();
             });
         });
 
         describe('ipv4', function() {
             it("should respond with 127.0.0.1", function() {
-                assert.equal(ip.loopback('ipv4'), '127.0.0.1')
+                assert.equal(ip.loopback('ipv4'), '127.0.0.1');
+                done();
             });
         });
 
         describe('ipv6', function() {
             it("should resond with fe80::1", function() {
-                assert.equal(ip.loopback('ipv6'), 'fe80::1')
+                assert.equal(ip.loopback('ipv6'), 'fe80::1');
+                done();
             });
         });
     });
@@ -59,31 +63,36 @@ describe("WifiManager", function (){
     describe("isLoopback() method", function() {
         describe('127.0.0.1', function() {
             it("should respond with true", function () {
-                assert.ok(ip.isLoopback('127.0.0.1'))
+                assert.ok(ip.isLoopback('127.0.0.1'));
+                done();
             });
         });
 
         describe('8.8.8.8', function () {
             it('should respond with false', function () {
                 assert.equal(ip.isLoopback('8.8.8.8'), false);
+                done();
             });
         });
 
         describe('fe80::1', function () {
             it('should respond with true', function () {
-                assert.ok(ip.isLoopback('fe80::1'))
+                assert.ok(ip.isLoopback('fe80::1'));
+                done();
             });
         });
 
         describe('::1', function () {
             it('should respond with true', function () {
-                assert.ok(ip.isLoopback('::1'))
+                assert.ok(ip.isLoopback('::1'));
+                done();
             });
         });
 
         describe('::', function () {
             it('should respond with true', function () {
-                assert.ok(ip.isLoopback('::'))
+                assert.ok(ip.isLoopback('::'));
+                done();
             });
         });
     });
