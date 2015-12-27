@@ -31,6 +31,12 @@ vm.stopAdHocNetwork();
 vm.isInternetConnected();
 ```
 
+####Check for network interface connectivity
+```
+vm.interfaceConnectionState('wlan0');
+```
+
+Checks if `wlan0` is connected. Return up if connected, down if not connected, undefined if interface is unknown.
 
 ## To dos
 
@@ -39,7 +45,4 @@ vm.isInternetConnected();
 
 ##Working on:
 
-####Check for network connectivity
-```
-vm.isConnected();
-```
+

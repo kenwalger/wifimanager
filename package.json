@@ -28,7 +28,7 @@
     "mocha": "^2.2.5",
     "istanbul": "^0.3.14"
   },
-  "licenses": [
+  "license": [
     {
       "type": "MIT",
       "url": "https://github.com/kenwalger/wifimanager/raw/master/LICENCE"
